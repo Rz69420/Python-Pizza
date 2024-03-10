@@ -1,0 +1,71 @@
+#include <stdio.h>
+
+int main()
+{
+    char c;
+    int total_bill;
+    int S = 15;
+    int M = 20;
+    int L = 25;
+    char Y = 'Y';
+    char N = 'N';
+
+    printf("What size of pizza do you want?\nEnter 'S' for small pizza\nEnter 'M' for medium pizza\nEnter 'L' for large pizza : ");
+    scanf("%c", &c);
+    
+    if (c == 'S')
+    {
+        printf("Do you want pepperoni?(Y or N) : ");
+        scanf(" %c", &c);
+        if (c == Y)
+        {
+           total_bill = S + 2;
+        }
+        else if (c == N)
+        {
+            total_bill = S;
+        }
+    }
+
+    if (c == 'M')
+    {
+        printf("Do you want pepperoni?(Y or N) : ");
+        scanf(" %c", &c);
+        if (c == Y)
+        {
+           total_bill = S + 3;
+        }
+        else if (c == N)
+        {
+           total_bill = M;
+        }
+    }
+
+    if (c == 'L')
+    {
+        printf("Do you want pepperoni?(Y or N) : ");
+        scanf(" %c", &c);
+        if (c == Y)
+        {
+           total_bill = L + 3;
+        }
+        else if (c == N)
+        {
+            total_bill = L;
+        }
+    }
+    
+    printf ("Do you want extra chese (Y or N) : ");
+    scanf(" %c", &c);
+    
+    if ( c == Y)
+    {
+        total_bill += 1;
+        printf("Thank you for choosing Python Pizza Deliveries!\nYour final bill is : %i", total_bill);
+    }
+
+    else if ( c == Y)
+    {
+        printf("Thank you for choosing Python Pizza Deliveries!\nYour final bill is : %i", total_bill);
+    }
+}
